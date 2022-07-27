@@ -409,7 +409,6 @@ img {
 .client-item {
   width: 170px;
   height: 92px;
-  background-color: rgb(206, 206, 206);
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
@@ -450,7 +449,7 @@ img {
   margin-bottom: 0;
 }
 
-/* footer */
+/* --------footer-------- */
 .footer {
   background-color: #2f303a;
   font-size: 14px;
