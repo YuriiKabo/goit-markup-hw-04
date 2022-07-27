@@ -113,7 +113,7 @@ img {
 .menu-nav .link:focus {
   color: var(--accent-color);
 }
-
+/* ---------Adress Nav------- */
 .adress-nav {
   display: flex;
 }
@@ -135,17 +135,27 @@ img {
 .adress-nav .link:focus {
   color: var(--accent-color);
 }
+
+/* .tel-nav::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #188ce8;
+  background-image: url(../img/bg-img.jpg);
+  background-size: contain;
+} */
 .header {
   border: 1px solid #ececec;
 }
 
-/* Hero */
+/* ---------Hero---------- */
 .hero {
-  background-color: #c4c4c4;
   text-align: center;
   padding: 200px 0;
 }
 .overlay {
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -263,6 +273,36 @@ img {
 .feature-item {
   margin: 0 30px 0 0;
 }
+
+.feature-item::before {
+  content: "";
+  height: 120px;
+  display: block;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
+/* .feature-item:nth-child(1)::before {
+  background-image: url(../img/antenna-temp.png);
+}
+.feature-item:nth-child(2)::before {
+  background-image: url(../img/clock-temp.png);
+} */
+.attention-item::before {
+  background-image: url(../img/antenna-temp.png);
+}
+.punkt-item::before {
+  background-image: url(../img/clock-temp.png);
+}
+.plan-item::before {
+  background-image: url(../img/diagram-temp.png);
+}
+.tech-item::before {
+  background-image: url(../img/astronaut-temp.png);
+}
+
 .feature-item:last-child {
   margin-right: 0;
 }
