@@ -3,8 +3,11 @@
 *,
 *::before,
 *::after {
-  /* outline: 1px solid rgb(250, 195, 175);
+  /*   outline: 1px solid rgb(250, 195, 175);
   background-color: rgba(0, 255, 106, 0.1); */
+}
+.section {
+  padding: 94px 0;
 }
 
 .container {
@@ -306,9 +309,6 @@ img {
 .feature-item:last-child {
   margin-right: 0;
 }
-.feature-selection {
-  padding: 94px 0;
-}
 
 .feature-list .title {
   font-weight: 700;
@@ -327,6 +327,7 @@ img {
 
 /* Work */
 .work {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 .work .list {
@@ -342,7 +343,6 @@ img {
 /* Our Team */
 .team-section {
   background: #f5f4fa;
-  padding: 94px 0;
 }
 
 .team-list {
@@ -361,7 +361,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 .team-card {
   background-color: var(--background-color);
@@ -377,8 +377,45 @@ img {
 .card-sighn {
   padding: 30px 0;
 }
+.team-social-list {
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.team-social-item {
+  background-color: var(--background-color);
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-item:hover,
+.team-social-item:focus {
+  background-color: var(--accent-color);
+}
+.team-social-icon {
+  padding: 12px;
+}
+/* -------CLIENTS------- */
+.clients-list {
+  display: flex;
+}
 
-/* GALERY */
+.client-item {
+  width: 170px;
+  height: 92px;
+  background-color: rgb(206, 206, 206);
+}
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* -------GALERY-------- */
+
 .prewiew-card-list {
   display: flex;
   flex-wrap: wrap;
@@ -412,9 +449,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 }
-.galery-section {
-  padding: 94px 0;
-}
+
 /* footer */
 .footer {
   background-color: #2f303a;
@@ -422,6 +457,14 @@ img {
   line-height: 1.71;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.logo-adress-container {
+  width: 231px;
+  margin-right: 70px;
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--accent-color);
@@ -455,10 +498,49 @@ img {
 .footer-nav {
   display: flex;
   flex-direction: column;
+  width: 231px;
 }
 .footer-nav-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .adress {
   font-style: normal;
+}
+.footer-cocial-container {
+  width: 206px;
+  height: 80px;
+}
+.connect-text {
+  display: block;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social-list {
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.footer-social-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: var(--accent-color);
+}
+.footer-social-icon {
+  padding: 12px;
 }
