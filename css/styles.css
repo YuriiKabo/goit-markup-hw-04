@@ -1,9 +1,7 @@
-/* --------global-------- */
-
 *,
 *::before,
 *::after {
-  /*  outline: 1px solid rgb(250, 195, 175);
+  /* outline: 1px solid rgb(250, 195, 175);
   background-color: rgba(0, 255, 106, 0.1); */
 }
 
@@ -137,23 +135,25 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
 }
 
 .link-icon-mail {
   fill: currentColor;
   width: 16px;
   height: 12px;
+  margin-right: 10px;
 }
 .link-icon-tel {
   fill: currentColor;
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .link-text {
   display: block;
   font-size: 14px;
-  padding: 32px 0 32px 10px;
 }
 
 .link-container:hover {
@@ -267,6 +267,8 @@ img {
   background-color: var(--accent-color);
 }
 
+/* --------features-------- */
+
 /* Hidden Title H2 */
 .section-title.feature {
   position: absolute;
@@ -281,7 +283,6 @@ img {
   margin: -1px;
 }
 
-/* --------features-------- */
 .feature-list {
   display: flex;
 }
@@ -292,11 +293,14 @@ img {
   margin-right: 0;
 }
 .feature-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   margin-bottom: 30px;
 }
 .feature-icon {
@@ -367,29 +371,25 @@ img {
 }
 
 .card-sighn {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 /* --------SOCIAL-------- */
 .team-social-list {
   width: 206px;
   height: 44px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   display: flex;
 }
-/* .team-social-item {
-  background-color: var(--background-color);
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  border-radius: 50%;
-} */
+
 .team-social-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--background-color);
   color: var(--social-icon-color);
   width: 44px;
@@ -399,9 +399,8 @@ img {
 }
 
 .team-social-icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
+  width: 20px;
+  height: 20px;
   fill: currentColor;
 }
 .team-social-link:hover,
@@ -414,24 +413,25 @@ img {
 .clients-list {
   display: flex;
 }
-
 .client-item {
   width: 170px;
   height: 92px;
-  border: var(--social-icon-color) solid 1px;
-  border-radius: 4px;
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-/* .client-link {
-  color: var(--social-icon-color);
-} */
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--social-icon-color) solid 1px;
+  border-radius: 4px;
+}
 .client-icon {
   fill: var(--social-icon-color);
 }
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border: var(--accent-color) solid 1px;
   border-radius: 4px;
   color: var(--primary-text-color);
@@ -451,6 +451,15 @@ img {
   width: 370px;
   margin-top: 30px;
   margin-right: 30px;
+}
+.prewiew-card-link {
+  display: block;
+  color: inherit;
+}
+.prewiew-card-link:hover,
+.prewiew-card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .prewiew-card-list .list-item:nth-child(3n) {
   margin-right: 0;
@@ -556,7 +565,9 @@ img {
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
   color: var(--button-text-color);
   width: 44px;
@@ -565,9 +576,8 @@ img {
   border-radius: 50%;
 }
 .footer-social-icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
+  width: 20px;
+  height: 20px;
   fill: currentColor;
 }
 .footer-social-link:hover,
