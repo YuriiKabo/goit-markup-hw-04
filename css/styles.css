@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-  /* outline: 1px solid rgb(250, 195, 175);
-  background-color: rgba(0, 255, 106, 0.1); */
+  outline: 1px solid rgb(250, 195, 175);
+  background-color: rgba(0, 255, 106, 0.1);
 }
 
 :root {
@@ -221,6 +221,7 @@ img {
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
+  letter-spacing: 0.06em;
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -299,12 +300,11 @@ img {
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  /* padding: 25px 100px; */
   margin-bottom: 30px;
 }
-.feature-icon {
+/* .feature-icon {
   display: block;
-}
+} */
 .feature-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -376,8 +376,6 @@ img {
 .team-social-list {
   width: 206px;
   height: 44px;
-  /* margin-left: auto;
-  margin-right: auto; */
   display: flex;
 }
 
@@ -580,7 +578,7 @@ img {
   fill: currentColor;
 }
 .footer-social-link:hover,
-.footer-social-iink:focus {
+.footer-social-link:focus {
   background-color: var(--accent-color);
   color: var(--button-text-color);
 }
